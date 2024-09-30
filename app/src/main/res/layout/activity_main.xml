@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <!-- Champ pour entrer le nom -->
+    <EditText
+        android:id="@+id/edit_nom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Champ pour entrer le prénom -->
+    <EditText
+        android:id="@+id/edit_prenom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/edit_nom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Champ pour entrer l'email -->
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_prenom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Champ pour entrer le téléphone -->
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Téléphone"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Champ pour entrer l'adresse -->
+    <EditText
+        android:id="@+id/edit_adresse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Champ pour entrer la ville -->
+    <EditText
+        android:id="@+id/edit_ville"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ville"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_adresse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Bouton pour envoyer les informations -->
+    <Button
+        android:id="@+id/btn_envoyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        app:layout_constraintTop_toBottomOf="@id/edit_ville"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
